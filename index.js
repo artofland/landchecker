@@ -6,6 +6,8 @@ const wtwnfts = require('./waterworld/nfts.json')
 
 require('dotenv').config()
 
+const MORALIS_API_KEY = process.env.MORALIS_API_KEY;
+
 /**
  * Who Own token with open sea sdk
  */
@@ -35,15 +37,23 @@ const whoOwnThisTokenOpenSea = async () => {
   -H 'X-API-Key: 'xxx'
  */
 const whoOwnThisTokenMoralis = async (contract_address, token_id) => {    
-    axios.get(`https://deep-index.moralis.io/api/v2/nft/${contract_address}/${token_id}/owners?chain=eth&format=decimal`, {headers:{"X-API-Key":process.env.MORALIS_API_KEY}}).then(res=>{
-        let data = res.data;
-        console.log(data);
-        if(data.result.length)
-        {
-            let owner = data.result[0].owner_of
-            console.log(owner);
-        }
-    })
+   return new Promise((resolve,reject)=>{
+       axios.get(`https://deep-index.moralis.io/api/v2/nft/${contract_address}/${token_id}/owners?chain=eth&format=decimal`, {headers:{"X-API-Key":MORALIS_API_KEY}}).then(res=>{
+           let data = res.data;
+           console.log(data);
+           if(data.result.length)
+           {
+               let owner = data.result[0].owner_of
+               console.log(owner);
+               resolve(owner);
+            }else{
+                let err = `${token_id.slice(0,16)}... for contract ${contract_address.slice(0,16)}...  has no owner` 
+                reject();
+            }
+        }).catch(err=>{
+           reject(err.message);
+       })
+   })
 }
 
 // Working Moralis exemple 
@@ -54,3 +64,23 @@ const whoOwnThisTokenMoralis = async (contract_address, token_id) => {
 
 // Check bulk import return json from OpenSea
 console.log(wtwnfts["nft"].length);
+
+/**
+ * Bulk Update Land With Moralis (429 issue from Rate Limit)
+ */
+const bulkUpdateLandWithMoralis = async ()=>{
+    for (const nft of wtwnfts["nft"])
+    {
+        let data = nft.nft_url.split('/');
+        let contract_address = data[5];
+        let token_id = data[6];
+        console.log('contract address', contract_address)
+        console.log('token_id', token_id)
+        try{
+            await whoOwnThisTokenMoralis(contract_address, token_id);
+        }catch(err)
+        {
+            console.log(err);
+        }
+    }
+}
