@@ -1,0 +1,232 @@
+{
+    "id": 547484069,
+    "num_sales": 0,
+    "background_color": null,
+    "image_url": "https://lh3.googleusercontent.com/T0SkVqJfgkomKbXGFa-ONrkRVJMG26QfMbsQJ51K0qBhcDUdnOz18PP7sWGcl0cT3lr6kqWHe4IfwQTf05yYAxuODB5ZdPhijzwZotA",
+    "image_preview_url": "https://lh3.googleusercontent.com/T0SkVqJfgkomKbXGFa-ONrkRVJMG26QfMbsQJ51K0qBhcDUdnOz18PP7sWGcl0cT3lr6kqWHe4IfwQTf05yYAxuODB5ZdPhijzwZotA=s250",
+    "image_thumbnail_url": "https://lh3.googleusercontent.com/T0SkVqJfgkomKbXGFa-ONrkRVJMG26QfMbsQJ51K0qBhcDUdnOz18PP7sWGcl0cT3lr6kqWHe4IfwQTf05yYAxuODB5ZdPhijzwZotA=s128",
+    "image_original_url": null,
+    "animation_url": null,
+    "animation_original_url": null,
+    "name": "WTW LAND (-224, -160)",
+    "description": "A LAND is a digital piece of real estate in Artof.Land Metaverse that players can buy to build structure on top of. Once you own a LAND, you will be able to use it for build anything you want. Each LAND is a unique (non-fungible) token lying on the public Ethereum blockchain (ERC-1155).",
+    "external_link": "https://artof.land",
+    "asset_contract": {
+      "address": "0x495f947276749ce646f68ac8c248420045cb7b5e",
+      "asset_contract_type": "semi-fungible",
+      "created_date": "2020-12-02T17:40:53.232025",
+      "name": "OpenSea Collection",
+      "nft_version": null,
+      "opensea_version": "2.0.0",
+      "owner": 102384,
+      "schema_name": "ERC1155",
+      "symbol": "OPENSTORE",
+      "total_supply": null,
+      "description": "",
+      "external_link": null,
+      "image_url": "https://openseauserdata.com/files/860b94bee079e3864d04849383d2b4d1.bin",
+      "default_to_fiat": false,
+      "dev_buyer_fee_basis_points": 0,
+      "dev_seller_fee_basis_points": 0,
+      "only_proxied_transfers": false,
+      "opensea_buyer_fee_basis_points": 0,
+      "opensea_seller_fee_basis_points": 250,
+      "buyer_fee_basis_points": 0,
+      "seller_fee_basis_points": 250,
+      "payout_address": null
+    },
+    "permalink": "https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/40868789574586488834959443052281218598274334533160055729397296470033029922817",
+    "collection": {
+      "payment_tokens": [
+        {
+          "id": 13689077,
+          "symbol": "ETH",
+          "address": "0x0000000000000000000000000000000000000000",
+          "image_url": "https://openseauserdata.com/files/6f8e2979d428180222796ff4a33ab929.svg",
+          "name": "Ether",
+          "decimals": 18,
+          "eth_price": 1,
+          "usd_price": 1532.41
+        },
+        {
+          "id": 4645681,
+          "symbol": "WETH",
+          "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2",
+          "image_url": "https://openseauserdata.com/files/accae6b6fb3888cbff27a013729c22dc.svg",
+          "name": "Wrapped Ether",
+          "decimals": 18,
+          "eth_price": 1,
+          "usd_price": 1532.41
+        }
+      ],
+      "primary_asset_contracts": [],
+      "traits": {
+        "LAND X": {
+          "min": 0,
+          "max": 3448
+        },
+        "LAND Y": {
+          "min": 32,
+          "max": 32
+        },
+        "LAND Z": {
+          "min": 0,
+          "max": 3448
+        }
+      },
+      "stats": {
+        "one_day_volume": 0,
+        "one_day_change": 0,
+        "one_day_sales": 0,
+        "one_day_average_price": 0,
+        "seven_day_volume": 0,
+        "seven_day_change": 0,
+        "seven_day_sales": 0,
+        "seven_day_average_price": 0,
+        "thirty_day_volume": 0,
+        "thirty_day_change": 0,
+        "thirty_day_sales": 0,
+        "thirty_day_average_price": 0,
+        "total_volume": 0,
+        "total_sales": 0,
+        "total_supply": 198,
+        "count": 198,
+        "num_owners": 1,
+        "average_price": 0,
+        "num_reports": 0,
+        "market_cap": 0,
+        "floor_price": 0
+      },
+      "banner_image_url": "https://openseauserdata.com/files/52c96fadcfa824e418bb455525b27dd9.png",
+      "chat_url": null,
+      "created_date": "2022-07-20T21:44:30.072716",
+      "default_to_fiat": false,
+      "description": "Waterworld is the first Metaverse World of Artof.Land. \nGet a Land to have unlimited access to our server to build anything you want. ",
+      "dev_buyer_fee_basis_points": "0",
+      "dev_seller_fee_basis_points": "500",
+      "discord_url": null,
+      "display_data": {
+        "card_display_style": "contain"
+      },
+      "external_url": "https://artof.land",
+      "featured": false,
+      "featured_image_url": "https://openseauserdata.com/files/52c96fadcfa824e418bb455525b27dd9.png",
+      "hidden": false,
+      "safelist_request_status": "not_requested",
+      "image_url": "https://openseauserdata.com/files/6cb7df330b096782d1bdf9ab31e5e3c9.png",
+      "is_subject_to_whitelist": false,
+      "large_image_url": "https://openseauserdata.com/files/52c96fadcfa824e418bb455525b27dd9.png",
+      "medium_username": null,
+      "name": "Waterworld - ArtofLand",
+      "only_proxied_transfers": false,
+      "opensea_buyer_fee_basis_points": "0",
+      "opensea_seller_fee_basis_points": "250",
+      "payout_address": "0x5a5aea489cb0130524b4e37ef80dbc97636d819f",
+      "require_email": false,
+      "short_description": null,
+      "slug": "waterworld-artofland",
+      "telegram_url": null,
+      "twitter_username": null,
+      "instagram_username": null,
+      "wiki_url": null,
+      "is_nsfw": false
+    },
+    "decimals": null,
+    "token_metadata": null,
+    "is_nsfw": false,
+    "owner": {
+      "user": {
+        "username": "NullAddress"
+      },
+      "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/1.png",
+      "address": "0x0000000000000000000000000000000000000000",
+      "config": ""
+    },
+    "sell_orders": null,
+    "seaport_sell_orders": null,
+    "creator": {
+      "user": {
+        "username": "ArtofLand"
+      },
+      "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/33.png",
+      "address": "0x5a5aea489cb0130524b4e37ef80dbc97636d819f",
+      "config": ""
+    },
+    "traits": [
+      {
+        "trait_type": "World",
+        "value": "WTW",
+        "display_type": null,
+        "max_value": null,
+        "trait_count": 0,
+        "order": null
+      },
+      {
+        "trait_type": "LAND Y",
+        "value": 32,
+        "display_type": "number",
+        "max_value": "256",
+        "trait_count": 0,
+        "order": null
+      },
+      {
+        "trait_type": "LAND Z",
+        "value": 3192,
+        "display_type": "number",
+        "max_value": "5129",
+        "trait_count": 0,
+        "order": null
+      },
+      {
+        "trait_type": "LAND X",
+        "value": 3256,
+        "display_type": "number",
+        "max_value": "5193",
+        "trait_count": 0,
+        "order": null
+      },
+      {
+        "trait_type": "POS",
+        "value": "(-224,-160)",
+        "display_type": null,
+        "max_value": null,
+        "trait_count": 0,
+        "order": null
+      },
+      {
+        "trait_type": "ID",
+        "value": "WTW-Zone--256--192",
+        "display_type": null,
+        "max_value": null,
+        "trait_count": 0,
+        "order": null
+      }
+    ],
+    "last_sale": null,
+    "top_bid": null,
+    "listing_date": null,
+    "is_presale": true,
+    "transfer_fee_payment_token": null,
+    "transfer_fee": null,
+    "related_assets": [],
+    "orders": null,
+    "auctions": [],
+    "supports_wyvern": true,
+    "top_ownerships": [
+      {
+        "owner": {
+          "user": {
+            "username": "ArtofLand"
+          },
+          "profile_img_url": "https://storage.googleapis.com/opensea-static/opensea-profile/33.png",
+          "address": "0x5a5aea489cb0130524b4e37ef80dbc97636d819f",
+          "config": ""
+        },
+        "quantity": "1",
+        "created_date": "2022-07-20T23:00:25.540207+00:00"
+      }
+    ],
+    "ownership": null,
+    "highest_buyer_commitment": null,
+    "token_id": "40868789574586488834959443052281218598274334533160055729397296470033029922817"
+  }
