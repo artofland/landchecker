@@ -1,7 +1,5 @@
 
 const abi = require('./eth/abi-owner.json')
-const wtwareas = require('./waterworld/wtw.json')
-const opensea = require('./waterworld/opensea.json')
 
 var Web3 = require('web3');
 var provider = `https://mainnet.infura.io/v3/${process.env.PROVIDER_KEY}`;
@@ -65,6 +63,9 @@ const getNftCollectionList = async (collection) => {
 }
 
 const setLandsOwner = async (data) => {
+    await Server.scp(true);
+    let wtwareas = await fs.readFileSync('./waterworld/wtw.json')
+    wtwareas = JSON.parse(wtwareas);
     let users = await getUsers();
     for (const nft of data) {
         let id = nft.traits[2].value.split('WTW-')[1];
