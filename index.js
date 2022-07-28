@@ -58,7 +58,6 @@ const getNftCollectionList = async (collection) => {
         result.data.assets.map(map => datas.push(map));
         cursor = result.data.next
     }
-    console.log(datas);
     setLandsOwner(datas);
 }
 
