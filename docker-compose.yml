@@ -1,0 +1,28 @@
+networks:
+  web:
+    external: true
+
+
+version: '3.3'
+services:
+    landchecker:
+        expose: 
+          - "3000"
+        restart: always
+        networks:
+          - web
+        image: ghcr.io/artofland/landchecker:master
+        labels:
+          - traefik.enable=true
+          - traefik.http.routers.landchecker-http.entrypoints=web
+          - traefik.http.routers.landchecker-http.rule=Host(`landchecker.artof.land`)
+
+          - traefik.http.middlewares.https-redirect.redirectscheme.scheme=https
+          - traefik.http.middlewares.https-redirect.redirectscheme.permanent=true
+          - traefik.http.routers.landchecker-http.middlewares=https-redirect@docker
+
+          - traefik.http.routers.landchecker-https.entrypoints=websecure
+          - traefik.http.routers.landchecker-https.rule=Host(`landchecker.artof.land`)
+          - traefik.http.routers.landchecker-https.tls=true
+          - traefik.http.routers.landchecker-https.tls.certresolver=letsencrypt
+          - traefik.http.services.landchecker.loadbalancer.server.port=3000
