@@ -12,6 +12,8 @@ services:
         networks:
           - web
         image: ghcr.io/artofland/landchecker:master
+        env_file:
+          - ./.env
         labels:
           - traefik.enable=true
           - traefik.http.routers.landchecker-http.entrypoints=web
